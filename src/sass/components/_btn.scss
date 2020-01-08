@@ -1,0 +1,41 @@
+.btn {
+  background-color: transparent;
+  border: 0.1rem solid $ter-col;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+  color: $prim-font-col;
+  text-transform: uppercase;
+
+  @include for-size(big-desktop-up) {
+    padding: 1.2rem 2rem;
+
+    font-size: 1rem;
+  }
+
+  &:hover {
+    box-shadow: 0 0.3rem 0.2rem 0 rgba($sec-col, 0.4);
+    transform: translateY(-0.2rem);
+
+    @include for-size(phone-portrait) {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
+  &:active {
+    transform: translateY(0.2rem);
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

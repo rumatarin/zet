@@ -1,0 +1,159 @@
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include for-size(phone-portrait) {
+    display: none;
+  }
+  
+  @include for-size(phone-landscape) {
+    display: none;
+  }
+  
+  @include for-size(desktops) {
+    display: flex;
+	}
+
+  &__list {
+    position: absolute;
+    right: 9.5rem;
+    list-style: none;
+    display: flex;
+    transform: translateX(4.5rem);
+  }
+
+  &__list-item {
+    position: relative;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 1.8rem;
+    }
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: $prim-font-col;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -.6rem;
+      display: block;
+      width: 100%;
+      height: 0.2rem;
+      background-color: $ter-col;
+      transform-origin: center;
+      transform: scaleX(0);
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: $prim-font-col;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 6rem;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    margin-right: 1.8rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: $prim-font-col;
+    text-transform: uppercase;
+    transition: display .3s ease;
+  }
+
+  &__decor {
+    position: relative;
+    display: block;
+    width: 2.1rem;
+    height: 0.15rem;
+    background-color: $ter-col;
+    transition: all .3s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -.7rem;
+      display: block;
+      width: 2.1rem;
+      height: 0.15rem;
+      background-color: $ter-col;
+      transition: all .3s ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -.7rem;
+      display: block;
+      width: 2.1rem;
+      height: 0.13rem;
+      background-color: $ter-col;
+      transition: all .3s ease;
+    }
+  }
+
+  &__decor-active {
+    position: relative;
+    display: block !important;
+    width: 2.1rem;
+    height: 0;
+    background-color: $ter-col;
+    transition: all .3s ease;
+    
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -.2rem;
+      display: block;
+      width: 2.1rem;
+      height: 0.2rem;
+      background-color: $ter-col;
+      transform-origin: center;
+      transform: rotate(45deg);
+      transition: all .3s ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 2.1rem;
+      height: 0.2rem;
+      background-color: $ter-col;
+      transform-origin: center;
+      transform: rotate(-45deg);
+      transition: all .3s ease;
+    }
+  }
+}

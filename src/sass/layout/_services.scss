@@ -1,0 +1,96 @@
+.services {
+  padding: 10rem 0;
+  background-color: $bg-col;
+
+  @include for-size(phone-portrait) {
+    padding: 3rem 0;
+  }
+
+  @include for-size(phone-landscape) {
+    padding: 3rem 0;
+  }
+
+  @include for-size(desktop-large) {
+    padding: 10rem 0;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 22rem;
+
+    @include for-size(phone-portrait) {
+      margin: 2rem;
+    }
+
+    @include for-size(phone-landscape) {
+      margin: 2rem;
+    }
+  }
+
+  &__item-pic {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at center, #495664, #29323c);
+    border-radius: 50%;
+  }
+
+  &__item-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: #f2f2f2;
+  }
+
+  &__item-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: $sec-font-col;
+    text-transform: uppercase;
+
+    margin-top: 3.9rem;
+    margin-bottom: 2.5rem;
+
+    @include for-size(phone-portrait) {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__item-text {
+    text-align: center;
+    line-height: 2.2rem !important;
+  }
+}

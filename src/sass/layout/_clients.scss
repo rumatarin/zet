@@ -1,0 +1,48 @@
+.clients {
+  padding: 4.3rem 0;
+  background-color: $bg-col;
+
+  &__content {
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include for-size(phone-portrait) {
+      flex-wrap: wrap;
+      justify-content: center; 
+    }
+
+    @include for-size(phone-landscape) {
+      flex-direction: row;
+      align-items: baseline;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: -6px -6px;
+    }
+
+  }
+
+
+  &__item {
+    max-width: 40rem;
+    margin: 1.6rem;
+
+    @include for-size(phone-portrait) {
+      padding: 1rem 0.5rem; 
+    }
+    
+    @include for-size(phone-landscape) {
+      padding: 1rem 0.5rem; 
+    }
+
+    @include for-size(tablets) {
+      flex-basis: inherit;
+      padding: 0;
+    }
+
+  }
+}

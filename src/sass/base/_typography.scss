@@ -1,0 +1,93 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.major__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 3.6rem;
+  color: $prim-font-col;
+
+  @include for-size(phone-portrait) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  @include for-size(desktops) {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  @include for-size(desktop-large) {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
+
+.major__text {
+  font-size: 1.7rem;
+  font-weight: light;
+  line-height: 2.5rem;
+  color: $prim-font-col;
+
+  @include for-size(phone-portrait) {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  @include for-size(desktops) {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+  }
+
+  @include for-size(desktop-large) {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+}
+
+.primary-heading {
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $sec-font-col;
+
+  @include for-size(phone-portrait) {
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+  }
+
+  @include for-size(desktop-large) {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+.primary-text {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  color: $sec-font-col;
+
+  @include for-size(phone-portrait) {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  @include for-size(phone-landscape) {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+
+  @include for-size(desktops) {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+
+  @include for-size(desktop-large) {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}

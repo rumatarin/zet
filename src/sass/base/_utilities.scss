@@ -1,0 +1,54 @@
+.decor {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    display: block;
+    height: 0.2rem;
+    width: 4rem;
+    background-color: $sec-col;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}
+
+.best {
+  border-top: none !important;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -.5rem;
+    left: -.1rem;
+    height: .5rem;
+    width: 100.7%;
+    background-color: #485563;
+  }
+
+  @include for-size(desktop-large) {
+
+    &::before {
+      top: -3.5rem;
+      left: -.1rem;
+      height: 3.5rem;
+      width: 100.7%;
+      background-color: transparent;
+      border-top: .5rem solid #485563;
+      border-left: 0.1rem solid #eee;
+      border-right: 0.1rem solid #eee;
+    }
+    
+  }
+
+}
+
+.justify-content-center {
+  justify-content: space-between;
+}

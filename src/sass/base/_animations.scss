@@ -1,0 +1,34 @@
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes arrowMove {
+
+  0% {
+    transform: translateY(-.1rem);
+  }
+
+  50% {
+    transform: translateY(.47rem);
+  }
+
+  100% {
+    transform: translateY(-.1rem);
+  }
+}

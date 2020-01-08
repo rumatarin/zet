@@ -1,0 +1,202 @@
+.pricing {
+  padding: 10rem 0;
+
+  @include for-size(phone-portrait) {
+    padding: 5rem 0;
+  }
+
+  @include for-size(phone-landscape) {
+    padding: 5rem 0;
+  }
+
+  @include for-size(desktop-large) {
+    padding: 10rem 0;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 7.5rem;
+
+    @include for-size(desktop-large) {
+      margin-bottom: 15rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+
+    @include for-size(desktops) {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+    max-width: 50rem;
+    border: 0.1rem solid #eee;
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+
+    @include for-size(phone-portrait) {
+      margin: 1.6rem;
+
+      &:nth-child(1) {
+        border: 0.1rem solid #eee;
+      }
+
+      &:nth-child(3) {
+        border: 0.1rem solid #eee;
+      }
+    }
+
+    @include for-size(phone-landscape) {
+      margin: 1.6rem;
+
+      &:nth-child(1) {
+        border: 0.1rem solid #eee;
+      }
+
+      &:nth-child(3) {
+        border: 0.1rem solid #eee;
+      }
+    }
+
+    @include for-size(tablets) {
+      margin: 1.6rem;
+
+      &:nth-child(1) {
+        border: 0.1rem solid #eee;
+      }
+
+      &:nth-child(3) {
+        border: 0.1rem solid #eee;
+      }
+    }
+
+    @include for-size(desktops) {
+      margin: 1.6rem;
+
+      &:nth-child(1) {
+        border: 0.1rem solid #eee;
+      }
+
+      &:nth-child(3) {
+        border: 0.1rem solid #eee;
+      }
+    }
+
+    @include for-size(desktop-large) {
+      margin: 0;
+
+      &:nth-child(1) {
+        border-right: none;
+      }
+
+      &:nth-child(3) {
+        border-left: none;
+      }
+    }
+  }
+
+  &__item-heading {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.1rem solid #eee;
+    padding-bottom: 3.3rem;
+  }
+
+  &__item-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #485563;
+  }
+
+  &__item-price {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    color: #485563;
+
+    margin-top: 2.3rem;
+    margin-bottom: 0.9rem;
+  }
+
+  &__item-span {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  &__item-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-text {
+    max-width: 34.5rem;
+    height: 26.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 4rem;
+    color: $sec-font-col;
+
+    @include for-size(phone-portrait) {
+      height: 22.5rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 3rem;
+
+      padding: 0 1.5rem;
+    }
+
+    @include for-size(desktops) {
+      height: 22.5rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+
+      padding: 0 1.5rem;
+    }
+
+    @include for-size(desktop-large) {
+      height: 26.5rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 3.2rem;
+
+      padding: 0 1.5rem;
+    }
+  }
+
+  &__item-btn {
+    color: $prim-font-col;
+    background-color: #485563 !important;
+    border: none !important;
+  }
+}

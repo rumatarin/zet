@@ -1,0 +1,111 @@
+.footer {
+  width: 100%;
+  padding: 5rem 0;
+  background-color: #f5f5f5;
+
+  @include for-size(phone-portrait) {
+    padding: 2rem 0;
+  }
+
+  @include for-size(phone-landscape) {
+    padding: 2rem 0;
+  }
+
+  @include for-size(desktop-large) {
+    padding: 5rem 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include for-size(phone-portrait) {
+      flex-direction: column;
+    }
+
+    @include for-size(phone-landscape) {
+      flex-direction: column;
+    }
+
+    @include for-size(desktops) {
+      flex-direction: row;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    @include for-size(phone-portrait) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @include for-size(phone-landscape) {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    @include for-size(desktops) {
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    margin-right: 2.7rem;
+
+    @include for-size(phone-portrait) {
+      transform: translateX(0.7rem);
+      margin: 0;
+    }
+
+    @include for-size(phone-landscape) {
+      transform: translateX(0.7rem);
+      
+    }
+  }
+
+  &__copyright {
+    @include for-size(phone-portrait) {
+      margin: 3rem 0;
+    }
+
+    @include for-size(phone-landscape) {
+      margin: 1rem 0;
+    }
+  }
+
+  &__copyright-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: $sec-font-col;
+
+    @include for-size(phone-portrait) {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: $sec-font-col;
+
+    margin-right: 2.2rem;
+
+    @include for-size(phone-portrait) {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+  }
+}
